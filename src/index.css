@@ -1,0 +1,134 @@
+*{
+  text-decoration: none;
+}
+::selection{
+  background-color: blueviolet;
+  color: #fff;
+}
+::-webkit-scrollbar{
+  width: 6px;
+  background-color: #262626;
+}
+::-webkit-scrollbar-thumb{
+  width: 100%;
+  background-color: blueviolet;
+}
+html{
+  scroll-behavior: smooth;
+}
+.navbar-toggler{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #131313 !important;
+}
+textarea{
+  resize: none !important;
+}
+.text-purple{
+  color: blueviolet !important;
+}
+.main .mainText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main{
+  min-height: 100vh;
+}
+#mainImg{
+  padding: 1rem;
+  overflow: hidden;
+}
+#mainImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(-5px -5px 13px blueviolet);
+}
+.btn-purple{
+  background-color: blueviolet !important;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff !important;
+
+}
+.btn-outline-purple{
+  border: 2px solid blueviolet !important;
+  color: #fff !important;
+  letter-spacing: 2px;
+
+}
+.btn-outline-purple:hover{
+  background-color: blueviolet !important;
+
+}
+.form-control{
+  border: 1px solid blueviolet !important;
+}
+.form-control:focus{
+  box-shadow: none !important;
+}
+.navbarComponent{
+  background-color: #131313ca !important;
+  backdrop-filter: blur(35px);
+}
+.cardImg{
+  width: 300px !important;
+  margin: auto;
+}
+.sectionHeader{
+  position: relative;
+}
+.sectionHeader::after{
+  content: '';
+  background-color: blueviolet;
+  width: 50px;
+  height: 3px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.aboutText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pointer{
+  cursor: pointer;
+}
+.icon:hover{
+  color: blueviolet !important;
+}
+.portfolio img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn-purple:hover{
+  opacity: .8;
+}
+.nav-link.active{
+  color: blueviolet !important;
+}
+@media screen and (max-width:800px){
+  .main{
+    transform: translateY(70px) !important; 
+
+  }
+  .cardImg{
+    width: 100% !important;
+    margin: auto;
+  }
+}
